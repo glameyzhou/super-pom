@@ -34,7 +34,7 @@
     <zxing.version>3.2.0</zxing.version>
     <poi.version>3.9</poi.version>
     <jaxb.verion>2.2.9</jaxb.verion>
-
+    <jfreeChart.version>1.0.19</jfreeChart.version>
     <logback.version>1.1.2</logback.version>
     <slf.api.version>1.7.7</slf.api.version>
 
