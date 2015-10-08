@@ -10,7 +10,15 @@
   <packaging>pom</packaging>
 
   <name>super-pom</name>
-  <description>The super pom description</description>
+  <description>The super pom description,all project can extends this pom,for we can use the same version</description>
+  <url>https://github.com/glameyzhou/super-pom</url>
+
+  <licenses>
+    <license>
+      <name>The Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
 
   <developers>
     <developer>
@@ -19,6 +27,17 @@
       <email>glamey.zhou@gmail.com</email>
     </developer>
   </developers>
+
+  <scm>
+    <connection>
+      scm:git:https://github.com/glameyzhou/super-pom.git
+    </connection>
+    <developerConnection>
+      scm:git:https://github.com/glameyzhou/super-pom.git
+    </developerConnection>
+    <url>https://github.com/glameyzhou/super-pom</url>
+  </scm>
+
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -334,6 +353,20 @@
         <executions>
           <execution>
             <id>attach-sources</id>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>2.10.3</version>
+        <executions>
+          <execution>
+            <id>attach-javadocs</id>
             <goals>
               <goal>jar</goal>
             </goals>
