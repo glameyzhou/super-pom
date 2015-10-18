@@ -377,6 +377,7 @@
                         <configuration>
                             <charset>UTF-8</charset>
                             <encoding>UTF-8</encoding>
+                            <show>private</show>
                         </configuration>
                         <executions>
                             <execution>
